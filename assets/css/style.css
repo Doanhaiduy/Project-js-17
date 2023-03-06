@@ -16,17 +16,20 @@ body {
 
 input {
     height: 30px;
-    padding: 5px;
+    padding: 5px 10px;
     width: 30%;
     border: none;
     outline: none;
     border-radius: 20px;
-    border: 1px solid #000;
+    border: 2px solid #aaa;
     background-color: #291e6f;
+    color: #aaa;
+    font-weight: 600;
 }
 
 input::placeholder {
-    color: #000;
+    color: #aaa;
+    font-weight: 500;
 }
 
 .movies {
@@ -171,4 +174,44 @@ input::placeholder {
 }
 .no-find.active {
     display: block;
+}
+.gr-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-size: 1rem;
+    user-select: none;
+    position: relative;
+    padding: 10px 10px;
+    margin: 10px 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #291e6f;
+    width: 80px;
+    color: #eee;
+}
+
+.btn.active {
+    background-color: #aaa;
+    color: #555;
+    cursor: no-drop;
+}
+
+.btn-page.active {
+    background-color: rgb(204, 106, 15);
+    color: #000;
+    cursor: pointer;
+}
+
+.btn-page:hover {
+    background-color: rgb(204, 106, 15);
+    color: #000;
 }
